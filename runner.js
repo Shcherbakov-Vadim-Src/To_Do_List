@@ -42,13 +42,11 @@ buttonSort.addEventListener('click', (event) => {       // обработчик 
         });
         flag = false;                              // меняю флаг
     } else if (flag === false) {
-        console.log(flag === false);
         buttonSort.classList.remove('sortGreyUp');     // смена значка сортировки через замену класса стиля
         buttonSort.classList.add('sortGrey');
         let lists2 = [];
         let textareaArray2 = document.querySelectorAll('.textarea'); // получил значения из списков
         lists2 = Array.from(textareaArray2);          // преобразовал в массив эти данные (из нод листа)
-        console.log(lists2);
         lists2.sort((a, b) => {                     //  функция сортировки по значениям велью (т.к. это текстАрея)
             if (a.value > b.value) {
                 return -1;
