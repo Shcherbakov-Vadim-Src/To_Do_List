@@ -3,7 +3,7 @@ const textarea = document.querySelector('.textarea'); // и текстовое �
 
 knopka.addEventListener('click', (event) => {
     let newLi = document.createElement('li');            // создаю лишку и добавляю начинку
-    newLi.innerHTML = `<form class="formText"><textarea class="textarea" rows="1" cols="20"></textarea><button class="reset" type="button">&#215;</button></form>`;
+    newLi.innerHTML = `<form class="formText"><textarea class="textarea" rows="1" cols="20"></textarea><button class="reset" type="button">x</button></form>`;
     document.querySelector('.textareaUl').append(newLi);
     deleteElementOfList();                              // сразу после создания элемента списка запускаю к нему функцию удаления
 });

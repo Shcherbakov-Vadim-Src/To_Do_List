@@ -24,7 +24,7 @@ h1 {
 }
 
 .yellowLine {
-    width: 336px;
+    width: 334px;
     height: 28px;
     border-radius: 10px 10px 0 0;
     background: #FFDC40;
@@ -39,7 +39,7 @@ h1 {
     display: block;
     height: 30px;
     width: 30px;
-    margin: 0px 0 10px 245px;
+    margin: 20px 0 0px 280px;
 }
 
 
@@ -94,7 +94,7 @@ h1 {
     box-sizing: border-box;
     border-radius: 10px;
     list-style-type: none;
-    margin: 20px 0 0 -10px;
+    margin: 20px 0 0 -15px;
     border: none;
     overflow: auto;
     outline: none;
@@ -122,10 +122,10 @@ h1 {
     border: 1px solid #C4C4C4;
     background-color: white;
     color: #C4C4C4;
-    font-size: 17px;
+    font-size: 16px;
     width: 23px;
     height: 23px;
-    margin: 12px 0 0 -35px;
+    margin: 12px 0 0 -40px;
     outline: none;
 }
 
@@ -134,10 +134,10 @@ h1 {
     border: 1px solid #C4C4C4;
     background-color:#9953F1;
     color: white;
-    font-size: 17px;
+    font-size: 16px;
     width: 23px;
     height: 23px;
-    margin: 12px 0 0 -35px;
+    margin: 12px 0 0 -40px;
     outline: none;
 }
 
