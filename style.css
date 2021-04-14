@@ -49,7 +49,7 @@ h1 {
     width: 25px;
     height: 15px;
     padding: 0;
-    background: url('/pictures/greyButtonDown.svg');
+    background: url('./pictures/greyButtonDown.svg');
     outline: none;
     border: none;
 }
@@ -60,7 +60,7 @@ h1 {
     width: 25px;
     height: 15px;
     padding: 0;
-    background: url('/pictures/buttonDown.svg');
+    background: url('./pictures/buttonDown.svg');
     outline: none;
     border: none;
 }
@@ -71,13 +71,13 @@ h1 {
     width: 25px;
     height: 15px;
     padding: 0;
-    background: url('/pictures/greyButtonUp.svg');
+    background: url('./pictures/greyButtonUp.svg');
     outline: none;
     border: none;
 }
 
 .sortGreyUp:hover {                     /* последние добавленные*/
-    background: url('/pictures/buttonUp.svg');
+    background: url('./pictures/buttonUp.svg');
 }
 
 .textarea {
@@ -120,12 +120,12 @@ h1 {
     height: 23px;
     margin: 15px 0 0 -35px;
     outline: none;
-    background: url('/pictures/smallGreyDeleteButton.svg') no-repeat;
+    background: url('./pictures/smallGreyDeleteButton.svg') no-repeat;
     background-size: 23px;
 }
 
 .reset:hover {
-    background: url('/pictures/smallVioletDeleteButton.svg') no-repeat;
+    background: url('./pictures/smallVioletDeleteButton.svg') no-repeat;
     background-size: 23px;
 }
 
