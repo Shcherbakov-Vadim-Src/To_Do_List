@@ -135,4 +135,9 @@ tasksListElement.addEventListener(`dragover`, (evt) => {
     }
     tasksListElement.insertBefore(activeElement, nextElement);
 });
+
+taskElements.ondragstart = function() {
+    return true;
+};
+
 //-------------------------------------------------------------------------------------------//
