@@ -39,7 +39,7 @@ h1 {
     display: block;
     height: 30px;
     width: 30px;
-    margin: 20px 0 0px 280px;
+    margin: 0px 0 -7px 272px;
 }
 
 
@@ -49,13 +49,20 @@ h1 {
     width: 25px;
     height: 15px;
     padding: 0;
-    background: url('./pictures/greyButtonDown.svg');
+    background: url('/pictures/greyButtonDown.svg');
     outline: none;
     border: none;
 }
 
 .sortGrey:hover {
-    background: url('./pictures/buttonDown.svg');
+    margin: 0 0 0 0;
+    display: block;
+    width: 25px;
+    height: 15px;
+    padding: 0;
+    background: url('/pictures/buttonDown.svg');
+    outline: none;
+    border: none;
 }
 
 .sortGreyUp {                     /* последние добавленные*/
@@ -64,13 +71,13 @@ h1 {
     width: 25px;
     height: 15px;
     padding: 0;
-    background: url('./pictures/greyButtonUp.svg');
+    background: url('/pictures/greyButtonUp.svg');
     outline: none;
     border: none;
 }
 
 .sortGreyUp:hover {                     /* последние добавленные*/
-    background: url('./pictures/buttonUp.svg');
+    background: url('/pictures/buttonUp.svg');
 }
 
 .textarea {
@@ -80,7 +87,7 @@ h1 {
     box-sizing: border-box;
     border-radius: 10px;
     list-style-type: none;
-    margin: 20px 0 0 -15px;
+    margin: 15px 0 0 -30px;
     border: none;
     overflow: auto;
     outline: none;
@@ -111,7 +118,7 @@ h1 {
     font-size: 16px;
     width: 23px;
     height: 23px;
-    margin: 12px 0 0 -40px;
+    margin: 12px 0 0 -35px;
     outline: none;
 }
 
@@ -172,4 +179,17 @@ h1 {
 .formText {
     display: flex;
     flex-direction: row;
+    width: 306px;
+}
+
+.selected {
+    opacity: 0.6;
+}
+
+.tasks__item {
+    cursor: move;
+}
+
+li {
+    width: 320px;
 }
