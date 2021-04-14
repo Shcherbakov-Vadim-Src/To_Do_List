@@ -11,7 +11,7 @@ knopkaAddElement.addEventListener('click', (event) => {
 const buttonAddElement = document.querySelector('.button');        // получил кнопку
 buttonAddElement.addEventListener('click', (event) => {
     let newLi2 = document.createElement('li');            // создаю лишку и добавляю начинку
-    newLi2.innerHTML = `<form class="formText tasks__item"><textarea class="textarea" rows="1" cols="20"></textarea><button class="reset" type="button">x</button></form>`;
+    newLi2.innerHTML = `<form class="formText tasks__item"><textarea class="textarea" rows="1" cols="20"></textarea><button class="reset" type="button"></button></form>`;
     document.querySelector('.textareaUl').append(newLi2);
     deleteElementOfList();                              // сразу после создания элемента списка запускаю к нему функцию удаления
 });
@@ -29,12 +29,12 @@ function deleteElementOfList() {                                  // функц�
 let lists = [];                                            // создал пустой массив для работы
 const buttonSort = document.querySelector('.sortGrey');   // поймал кнопку сортировки
 
-let flag = true;
+let flag = true;                                         // флаг для работы сортировки массива
 buttonSort.addEventListener('click', (event) => {       // обработчик события по клику 
     buttonSort.classList.remove('sortGrey');       // смена значка сортировки через замену класса стиля
     buttonSort.classList.add('sortGreyUp');
-    if (flag === true) {                           // флаг для работы сортировки массива
-        let textareaArray = document.querySelectorAll('.textarea'); // получил значения из списков
+    if (flag) {                                 
+        let textareaArray = document.querySelectorAll('.textarea');  // получил значения из списков
         lists = Array.from(textareaArray);          // преобразовал в массив эти данные (из нод листа)
         lists.sort((a, b) => {                     //  функция сортировки по значениям велью (т.к. это текстАрея)
             if (a.value > b.value) {
@@ -49,7 +49,7 @@ buttonSort.addEventListener('click', (event) => {       // обработчик 
             textareaUl.appendChild(el.parentElement.parentElement);
         });
         flag = false;                              // меняю флаг
-    } else if (flag === false) {
+    } else {
         buttonSort.classList.remove('sortGreyUp');     // смена значка сортировки через замену класса стиля
         buttonSort.classList.add('sortGrey');
         let lists2 = [];

@@ -112,19 +112,21 @@ h1 {
 
 .reset {
     border-radius: 50%;
-    border: 1px solid #C4C4C4;
+    border: none;
     background-color: white;
     color: #C4C4C4;
-    font-size: 16px;
+    font-size: 15px;
     width: 23px;
     height: 23px;
-    margin: 12px 0 0 -35px;
+    margin: 15px 0 0 -35px;
     outline: none;
+    background: url('/pictures/smallGreyDeleteButton.svg') no-repeat;
+    background-size: 23px;
 }
 
 .reset:hover {
-    background-color:#9953F1;
-    color: white;
+    background: url('/pictures/smallVioletDeleteButton.svg') no-repeat;
+    background-size: 23px;
 }
 
 .button {
@@ -159,9 +161,9 @@ h1 {
     height: 42px;
     border-radius: 71px;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     position: relative;
-    bottom: 16px;
+    bottom: 15px;
     left: 101px;
     align-items: center;
 }
